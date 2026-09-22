@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -109,7 +110,7 @@ class ProfilePage extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Text(
-            'Rizky Ramadhan',
+            'Tio Risnanto, S.Kom',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 28.0,
@@ -204,11 +205,14 @@ class ProfilePage extends StatelessWidget {
                           ),
                         ),
                         SizedBox(height: 5),
-                        Text('Latihan', style: TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w400,
-                          fontFamily: GoogleFonts.poppins().fontFamily
-                        ),),
+                        Text(
+                          'Latihan',
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            fontFamily: GoogleFonts.poppins().fontFamily,
+                          ),
+                        ),
                         SizedBox(height: 10),
                       ],
                     ),
@@ -218,9 +222,70 @@ class ProfilePage extends StatelessWidget {
                   child: Card(
                     child: Column(
                       children: <Widget>[
-                        Icon(Icons.star_border_outlined),
-                        Text('45'),
-                        Text('Latihan'),
+                        SizedBox(height: 10),
+                        Icon(
+                          Icons.star_border_outlined,
+                          size: 25,
+                          color: Colors.blueAccent,
+                        ),
+                        SizedBox(height: 5),
+                        Text(
+                          '1000',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: GoogleFonts.poppins().fontFamily,
+                          ),
+                        ),
+                        SizedBox(height: 5),
+                        Text(
+                          'Score',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            fontFamily: GoogleFonts.poppins().fontFamily,
+                            fontSize: 14,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          //Section 5
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              spacing: 10,
+              children: [
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.blue),
+                    ),
+                    child: Row(
+                      spacing: 2,
+                      children: <Widget>[
+                        Icon(CupertinoIcons.pencil, color: Colors.white),
+                        Text(
+                          'Edit Profile',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    child: Row(
+                      spacing: 2,
+                      children: [
+                        Icon(Icons.share),
+                        Text('Bagikan'),
                       ],
                     ),
                   ),
