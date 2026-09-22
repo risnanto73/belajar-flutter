@@ -138,7 +138,68 @@ class ProfilePage extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontFamily: GoogleFonts.poppins().fontFamily,
-                    color: Colors.white
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          //Section 4
+          Container(
+            padding: EdgeInsets.all(8),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              spacing: 4,
+              children: <Widget>[
+                Expanded(
+                  child: Card(
+                    child: Column(
+                      children: <Widget>[
+                        SizedBox(height: 10),
+                        Icon(Icons.widgets_outlined),
+                        SizedBox(height: 5),
+                        Text(
+                          '12',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: GoogleFonts.poppins().fontFamily,
+                          ),
+                        ),
+                        SizedBox(height: 5),
+                        Text(
+                          'Proyek',
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w400,
+                            fontFamily: GoogleFonts.poppins().fontFamily,
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                      ],
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Card(
+                    child: Column(
+                      children: <Widget>[
+                        Icon(Icons.check_circle_outline),
+                        Text('45'),
+                        Text('Latihan'),
+                      ],
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Card(
+                    child: Column(
+                      children: <Widget>[
+                        Icon(Icons.star_border_outlined),
+                        Text('45'),
+                        Text('Latihan'),
+                      ],
+                    ),
                   ),
                 ),
               ],
