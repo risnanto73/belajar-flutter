@@ -156,7 +156,11 @@ class ProfilePage extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         SizedBox(height: 10),
-                        Icon(Icons.widgets_outlined),
+                        Icon(
+                          Icons.widgets_outlined,
+                          color: Colors.blueAccent,
+                          size: 25,
+                        ),
                         SizedBox(height: 5),
                         Text(
                           '12',
@@ -184,9 +188,28 @@ class ProfilePage extends StatelessWidget {
                   child: Card(
                     child: Column(
                       children: <Widget>[
-                        Icon(Icons.check_circle_outline),
-                        Text('45'),
-                        Text('Latihan'),
+                        SizedBox(height: 10),
+                        Icon(
+                          Icons.check_circle_outline,
+                          color: Colors.blueAccent,
+                          size: 25,
+                        ),
+                        SizedBox(height: 5),
+                        Text(
+                          '45',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: GoogleFonts.poppins().fontFamily,
+                          ),
+                        ),
+                        SizedBox(height: 5),
+                        Text('Latihan', style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w400,
+                          fontFamily: GoogleFonts.poppins().fontFamily
+                        ),),
+                        SizedBox(height: 10),
                       ],
                     ),
                   ),
