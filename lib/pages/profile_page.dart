@@ -120,7 +120,30 @@ class ProfilePage extends StatelessWidget {
             'Junior Flutter Developer',
             style: TextStyle(fontFamily: GoogleFonts.poppins().fontFamily),
           ),
-          Icon(Icons.flutter_dash, size: 25,),
+          SizedBox(height: 8),
+          Container(
+            padding: EdgeInsets.all(3.0),
+            width: 200,
+            decoration: BoxDecoration(
+              color: Colors.blueAccent,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Icon(Icons.flutter_dash, size: 25, color: Colors.white),
+                SizedBox(width: 3),
+                Text(
+                  'Dart & Widget Learner',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontFamily: GoogleFonts.poppins().fontFamily,
+                    color: Colors.white
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
